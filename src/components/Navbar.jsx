@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
     return (
-        <nav className="flex justify-between mt-5 px-10 ">
+        <nav className="flex justify-between mt-3">
             <div >
                 <h1 className="text-5xl cursor-pointer font-bold italic">T</h1>
             </div>
