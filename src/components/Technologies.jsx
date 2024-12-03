@@ -6,10 +6,10 @@ import { SiExpress } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 const Technologies = () => {
   return (
-    <section className="border-b border-neutral-800 pb-4">
+    <section className="border-b border-neutral-800 pb-4 mt-20">
         <h2 className='text-4xl text-center'>Technologies</h2>
 
-        <div className="flex gap-4 my-10 justify-center">
+        <div className="flex flex-wrap gap-4 my-10 justify-center">
             <div className='rounded-2xl border-4 border-neutral-400 p-4'>
             <FaReact className="text-cyan-400 text-5xl"/>
             </div>
