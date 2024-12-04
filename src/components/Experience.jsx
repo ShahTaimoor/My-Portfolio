@@ -28,15 +28,15 @@ const Experience = () => {
               initial={{opacity:0,x:100}}
               transition={{duration:1}}
               
-              className='md:w-[60%] mb-10'>
-                <h6>{item.role} - {''}
+              className='md:w-[60%]  mb-10'>
+                
                     <span>{item.company}</span>
-                </h6>
-              <p className='tracking-tighter mb-3'>{item.description}</p>
+                
+              <p className='tracking-tighter mb-3 '>{item.description}</p>
               {item.technologies.map((item,index)=>(
-                <span key={index} className='mr-2 mt-4 rounded bg-neutral-900 px-2  py-1 text-sm font-medium text-purple-800'>
+                <p key={index} className='mr-2 inline-block rounded bg-neutral-900 mt-3 px-2 py-1 text-sm font-medium text-purple-800'>
                     {item}
-                </span>
+                </p>
               ))}
               </motion.div>
             </div>
