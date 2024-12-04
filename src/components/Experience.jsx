@@ -1,16 +1,34 @@
 import React from 'react'
 import { EXPERIENCES } from '../constants'
-
+import { motion } from "motion/react"
 const Experience = () => {
     return (
         <section className=' md:px-20 pb-4 border-b border-neutral-800'>
-                <h2 className='my-20  text-4xl text-center'>Experiences</h2>
+                <motion.h2
+                 whileInView={{ opacity: 1, y: 0 }}
+                 initial={{ opacity: 0, y: -100 }}
+                 transition={{ duration: 1.5 }}
+                
+                className='my-20  text-4xl text-center'>Experiences</motion.h2>
         {EXPERIENCES.map((item,index)=>(
-            <div key={index} className='mb-8  md:flex  justify-between '>
-              <div  className='md:w-[40%]'>
+            <div
+            
+            
+            key={index} className='mb-8  md:flex  justify-between '>
+              <motion.div
+              whileInView={{opacity:1,x:0}}
+              initial={{opacity:0,x:-100}}
+              transition={{duration:0.5}}
+              
+              className='md:w-[40%]'>
                 <p>{item.year}</p>
-              </div>
-              <div className='md:w-[60%] mb-10'>
+              </motion.div>
+              <motion.div
+              whileInView={{opacity:1,x:0}}
+              initial={{opacity:0,x:100}}
+              transition={{duration:1}}
+              
+              className='md:w-[60%] mb-10'>
                 <h6>{item.role} - {''}
                     <span>{item.company}</span>
                 </h6>
@@ -20,7 +38,7 @@ const Experience = () => {
                     {item}
                 </span>
               ))}
-              </div>
+              </motion.div>
             </div>
         ))}
         </section>

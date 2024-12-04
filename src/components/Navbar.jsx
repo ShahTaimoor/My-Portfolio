@@ -1,6 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -10,9 +11,13 @@ const Navbar = () => {
             </div>
 
             <div className="flex text-2xl cursor-pointer items-center gap-6">
-                <FaGithub />
-                <FaLinkedinIn />
-                <FaXTwitter />
+                <Link target="_blank" to='https://github.com/ShahTaimoor?tab=repositories'><FaGithub /></Link>
+                <Link target="_blank" to='https://www.linkedin.com/in/hafiz-shah-taimoor-b86191268/'><FaLinkedinIn /></Link>
+                
+
+
+
+
             </div>
         </nav>
     )
